@@ -6,7 +6,19 @@ const NAME = "Heater";
 var schema = mongoose.Schema({
   name:      { type: String,  default: "New Heater" },
   state:     { type: Boolean, default: false        },
-  device_id: { type: String,  default: ""           }
+  device_id: { type: String,  default: ""           },
+
+  // Relationships
+  rooms: [{ type: Schema.Types.ObjectId, ref: 'Room' }],
+
+  // Slug
+  slug: {
+    type: String,
+    default: function() {
+      let number = Math.floor(Math.random() * (1000 - 1)) + 1;
+      return `new_heater_${number}`;
+    }
+  }
 });
 
 
