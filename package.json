@@ -1,0 +1,29 @@
+{
+  "name": "klymit",
+  "version": "0.0.0",
+  "description": "Klymit Thermostat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mileszim/klymit.git"
+  },
+  "keywords": [
+    "thermostat",
+    "smart",
+    "raspberrypi"
+  ],
+  "author": "Miles Zimmerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mileszim/klymit/issues"
+  },
+  "homepage": "https://github.com/mileszim/klymit#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.3.4",
+    "spark": "^1.0.0"
+  }
+}
